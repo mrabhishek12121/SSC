@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC Prep Zone | Free Online Quizzes</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#14b8a6', // Cyan/Teal (Professional and Trustworthy)
+                        'secondary': '#1f2937', // Dark Gray
+                        'background': '#f0fdfa', // Very light Teal/Mint background
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 10px 15px -3px rgba(20, 184, 166, 0.5), 0 4px 6px -2px rgba(20, 184, 166, 0.2);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-background min-h-screen font-sans text-secondary">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-primary">SSC Prep Zone</a>
+            <!-- Desktop/Tablet Navigation Links -->
+            <nav class="hidden sm:flex space-x-6">
+                <a href="#benefits" class="text-secondary hover:text-primary transition duration-150 font-medium">Why Us?</a>
+                <a href="#about" class="text-secondary hover:text-primary transition duration-150 font-medium">About Us</a>
+                <a href="#contact" class="text-secondary hover:text-primary transition duration-150 font-medium">Contact</a>
+            </nav>
+            <!-- Mobile Menu Placeholder -->
+            <button class="sm:hidden p-2 text-secondary rounded-lg hover:bg-gray-100" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="max-w-4xl mx-auto px-4 py-10 md:py-16">
+
+        <!-- Hero Section -->
+        <section class="text-center p-8 md:p-16 rounded-3xl bg-white shadow-2xl mb-16">
+            <h2 class="text-4xl md:text-6xl font-extrabold text-secondary mb-4 leading-tight">
+                Your Free Path to <span class="text-primary">SSC Success</span>
+            </h2>
+            <p class="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
+                Access unlimited, high-quality quizzes tailored for SSC CGL, CHSL, and MTS. No cost, no limits, just results.
+            </p>
+            <a href="tests.html" class="inline-block btn-primary bg-primary text-white font-bold text-lg py-3 px-10 rounded-full shadow-xl hover:bg-teal-500">
+                Get Started Now →
+            </a>
+        </section>
+        
+        <!-- --- -->
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="py-10">
+            <h3 class="text-3xl font-bold text-center mb-10 text-primary">Why Choose SSC Prep Zone?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                
+                <!-- Benefit Card 1: Free -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-yellow-500">
+                    <span class="text-5xl mb-3 block">💸</span>
+                    <p class="text-xl font-semibold mb-2">Completely Free</p>
+                    <p class="text-gray-600 text-sm">Every test, every question, completely free. We believe quality education should have no price tag.</p>
+                </div>
+
+                <!-- Benefit Card 2: No Money/Registration -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-red-500">
+                    <span class="text-5xl mb-3 block">🔒</span>
+                    <p class="text-xl font-semibold mb-2">Instant Access</p>
+                    <p class="text-gray-600 text-sm">No lengthy sign-up or hidden fees. Jump straight into practice without any hassle or registration required.</p>
+                </div>
+
+                <!-- Benefit Card 3: Anytime Access -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-4 border-blue-500">
+                    <span class="text-5xl mb-3 block">⏱️</span>
+                    <p class="text-xl font-semibold mb-2">Access Anytime, Anywhere</p>
+                    <p class="text-gray-600 text-sm">Practice on your phone, tablet, or desktop. Our platform is mobile-friendly and always available 24/7.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- --- -->
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16">
+            <div class="bg-white p-8 rounded-2xl shadow-xl border-l-8 border-primary md:flex items-center space-y-6 md:space-y-0 md:space-x-8">
+                <div class="md:w-3/4">
+                    <h3 class="text-3xl font-bold mb-3">About Us</h3>
+                    <p class="text-gray-700">
+                        We are a dedicated team of educators and SSC aspirants who understand the challenges of exam preparation. Our goal is to provide **high-quality, focused practice** material to help you master every section—from Quantitative Aptitude to General Awareness—and ensure you are fully prepared for the competitive nature of the SSC examinations.
+                    </p>
+                </div>
+                <div class="md:w-1/4 text-center">
+                    <a href="#" class="inline-block w-full md:w-auto bg-secondary text-white font-semibold py-3 px-6 rounded-lg hover:bg-gray-700 transition duration-300">
+                        Read Our Mission
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="mt-12 py-8 border-t-4 border-gray-200 bg-white">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h4 class="text-xl font-semibold mb-3">Get in Touch</h4>
+            <p class="text-gray-600 mb-4">Have feedback or need support? Send us an email.</p>
+            <a href="mailto:support@sscprapzone.com" class="inline-block bg-gray-200 text-secondary font-medium py-2 px-6 rounded-full hover:bg-gray-300 transition duration-300">
+                Contact Us (Email)
+            </a>
+            <p class="mt-8 text-gray-500 text-sm">
+                &copy; 2025 SSC Prep Zone. All rights reserved. | <a href="#" class="hover:underline">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
